@@ -9,6 +9,7 @@ import { InMemoryDataService }  from './in-memory-data.service';
 import { HeroService } from './hero.service';
 import { HeroesComponent }  from './heroes.component';
 import { HeroDetailComponent } from './hero-detail.component';
+import { HeroSearchComponent } from './hero-search.component';
 import {DashboardComponent} from './dashboard.component';
 
 import {AppComponent} from './app.component';
@@ -19,7 +20,7 @@ import {AppComponent} from './app.component';
 @NgModule({
   imports:      [ HttpModule, BrowserModule, FormsModule, AppRoutingModule, InMemoryWebApiModule.forRoot(InMemoryDataService) ],
   providers: [ HeroService ],
-  declarations: [ AppComponent, HeroesComponent, HeroDetailComponent, DashboardComponent ],
+  declarations: [ AppComponent, HeroesComponent, HeroDetailComponent, DashboardComponent, HeroSearchComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
